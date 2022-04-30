@@ -16,34 +16,9 @@ body{
     white-space: nowrap;
 }
 
-.points-home, .points-away{
-    color: #FDF860;
-    font-size: 150px;
-    text-align: center;
-    padding-top: 25%;
-    font-family: 'Orbitron', sans-serif;
-}
+/*===== SECTIONS FÜR DIE ZÄHLERSTÄNDE =====*/
 
-.points-base{
-    background-color: #000000;
-    width: 80%;
-    height: 80%;
-    border-radius: 40px;
-    margin: 37px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.home-team .points-base{
-
-    outline: #97F5BB 5px solid;
-    outline-offset: 37px;
-}
-
-.away-team .points-base{
-    outline: #525DF4 5px solid;
-    outline-offset: 37px;
-}
+/*----- ALLGEMEIEN ANGABEN -----*/
 
 section{
     display: inline-block;
@@ -51,11 +26,55 @@ section{
 }
 
 article{
-    margin-left: auto;
-    margin-right: auto;
     width: 489px;
     height: 489px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 123px;
+}
+
+.points-base{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #000000;
+    width: 80%;
+    height: 80%;
+    border-radius: 40px;
+}
+
+.points-home, .points-away{
+    padding-top: 25%;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 150px;
+    color: #FDF860;
+    text-align: center;
+}
+
+.box-team-name{
+    margin-top: 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.team-name{
+    position: relative;
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #2C2C2C;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 37px;
+    text-align: center;
+}
+
+li{
+    display: inline-block;
+    width: 105px;
+    height: 105px;
+    padding: 31px;
+    margin-bottom: 82px;
+    margin-right: 25px;
+    border-radius: 20px;
 }
 
 ul{
@@ -65,48 +84,30 @@ ul{
     font-size: 37px;
 }
 
-.box-team-name{
-    text-align: center;
-    margin-top: -25px;
-    text-transform: uppercase;
-}
+/*----- ANGABEN FÜR DAS HOME-TEAM -----*/
 
-.team-name{
-    font-family: 'Orbitron', sans-serif;
-    font-size: 37px;
-    text-align: center;
-    background-color: #2C2C2C;
-    padding-left: 5px;
-    padding-right: 5px;
-    display: inline-block;
-    z-index: 10;
-    position: relative;
-}
+.home-team .points-base{
 
-/*===== TEAM HOME =====*/
+    outline: #97F5BB 5px solid;
+    outline-offset: 37px;
+}
 
 .home-team li{
     background-color: #97F5BB;
-    display: inline-block;
-    width: 105px;
-    height: 105px;
-    border-radius: 20px;
-    padding: 31px;
-    margin-bottom: 82px;
 }
 
-/*===== TEAM AUSWÄRTS =====*/
+/*----- ANGABEN FÜR DAS AWAY-TEAM -----*/
+
+.away-team .points-base{
+    outline: #525DF4 5px solid;
+    outline-offset: 37px;
+}
 
 .away-team li{
     background-color: #525DF4;
-    display: inline-block;
-    width: 105px;
-    height: 105px;
-    border-radius: 20px;
-    padding: 31px;
 }
 
-/*===== FOOTER mit Button =====*/
+/*===== FOOTER MIT RESET-BUTTON =====*/
 
 footer{
     margin-left: auto;
@@ -114,12 +115,12 @@ footer{
 }
 
 button{
-    font-size: 16px;
-    background-color: #FFFFFF;
-    padding: 10px 41px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10px;
     margin-bottom: 49px;
+    padding: 10px 41px;
+    background-color: #FFFFFF;
+    font-size: 16px;
+    border-radius: 10px;
 }
