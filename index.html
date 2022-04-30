@@ -9,37 +9,68 @@
   </head>
   <body>
     <main>
-      <section class="home-team">
-        <article class="counter">
-          <div class="points-base">
-            <p class="points-home"></p>
+      <section class="team-results">
+        <article class="home-team">
+          <div class="counter">
+            <div class="points-base">
+              <p class="points-home"></p>
+            </div>
+            <div class="box-team-name">
+              <p class="team-name">Home</p>
+            </div>
           </div>
-          <div class="box-team-name">
-            <p class="team-name">Home</p>
-          </div>
+          <ul class="points-on-top">
+            <li onclick="pointsOnTopOneHome()">+1</li>
+            <li onclick="pointsOnTopTwoHome()">+2</li>
+            <li onclick="pointsOnTopThreeHome()">+3</li>
+          </ul>
         </article>
-        <ul class="points-on-top">
-          <li onclick="pointsOnTopOneHome()">+1</li>
-          <li onclick="pointsOnTopTwoHome()">+2</li>
-          <li onclick="pointsOnTopThreeHome()">+3</li>
-        </ul>
-      </section>
-      <section class="away-team">
-        <article class="counter">
-          <div class="points-base">
-            <p class="points-away"></p>
+        <article class="away-team">
+          <div class="counter">
+            <div class="points-base">
+              <p class="points-away"></p>
+            </div>
+            <div class="box-team-name">
+              <p class="team-name">Away</p>
+            </div>
           </div>
-          <div class="box-team-name">
-            <p class="team-name">Away</p>
-          </div>
+          <ul class="points-on-top">
+            <li onclick="pointsOnTopOneAway()">+1</li>
+            <li onclick="pointsOnTopTwoAway()">+2</li>
+            <li onclick="pointsOnTopThreeAway()">+3</li>
+          </ul>
         </article>
-        <ul class="points-on-top">
-          <li onclick="pointsOnTopOneAway()">+1</li>
-          <li onclick="pointsOnTopTwoAway()">+2</li>
-          <li onclick="pointsOnTopThreeAway()">+3</li>
-        </ul>
       </section>
+      <!-- BONUS MODAL Start -->
+      <section id="myModal" class="modal">
+        <article>
+          <span class="close">&times;</span>
+          <div id="home-rename">
+            <h2>Rename Home-Team</h2>
+            <p>max. 10 characters</p>
+            <input
+              id="change-home-team-name"
+              type="text"
+              value="Home"
+              maxlength="10"
+            />
+          </div>
+          <div id="away-rename">
+            <h2>Rename Away-Team</h2>
+            <p>max. 10 characters</p>
+            <input
+              id="change-away-team-name"
+              type="text"
+              value="Away"
+              maxlength="10"
+            />
+          </div>
+          <button>Commit</button>
+        </article>
+      </section>
+      <!-- BONUS MODAL Ende -->
       <footer>
+        <button id="rename" onclick="renameTeams()">Rename Teams</button>
         <button onclick="resetPoints()">Reset</button>
       </footer>
     </main>
