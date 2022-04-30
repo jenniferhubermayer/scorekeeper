@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Orbitron:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Lato', sans-serif;
+    color: #FFFFFF;
+}
+
+body{
+    background-color: #2C2C2C;
+    white-space: nowrap;
+}
+
+.points{
+    color: #FDF860;
+    font-size: 150px;
+    text-align: center;
+    padding-top: 25%;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.points-base{
+    background-color: #000000;
+    width: 80%;
+    height: 80%;
+    border-radius: 40px;
+    margin: 37px;
+    margin-left: auto;
+    margin-right: auto;
+    outline: #525DF4 2px solid;
+    outline-offset: 37px;
+}
+section{
+    display: inline-block;
+    width: 50%;
+}
+
+article{
+    margin-left: auto;
+    margin-right: auto;
+    width: 489px;
+    height: 489px;
+    margin-top: 123px;
+}
+
+ul{
+    list-style: none;
+    margin-top: 137px;
+    text-align: center;
+    font-size: 37px;
+}
+
+.box-team-name{
+    text-align: center;
+    margin-top: -25px;
+}
+
+.team-name{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 37px;
+    text-align: center;
+    background-color: #2C2C2C;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    z-index: 10;
+    position: relative;
+}
+
+/*===== TEAM HOME =====*/
+
+.home-team li{
+    background-color: #97F5BB;
+    display: inline-block;
+    width: 105px;
+    height: 105px;
+    border-radius: 20px;
+    padding: 31px;
+    margin-bottom: 82px;
+}
+
+/*===== TEAM AUSWÄRTS =====*/
+
+.away-team li{
+    background-color: #525DF4;
+    display: inline-block;
+    width: 105px;
+    height: 105px;
+    border-radius: 20px;
+    padding: 31px;
+}
+
+/*===== FOOTER mit Button =====*/
+
+footer{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button{
+    font-size: 16px;
+    background-color: #FFFFFF;
+    padding: 10px 41px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    margin-bottom: 49px;
+}

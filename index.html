@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scorekeeper</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section class="home-team">
+        <article class="counter">
+          <div class="points-base">
+            <p class="points">05</p>
+          </div>
+          <div class="box-team-name">
+            <p class="team-name">Test</p>
+          </div>
+        </article>
+        <ul class="points-on-top">
+          <li onclick="top-1">1</li>
+          <li onclick="top-2">2</li>
+          <li onclick="top-3">3</li>
+        </ul>
+      </section>
+      <section class="away-team">
+        <article class="counter">
+          <div class="points-base">
+            <p class="points">01</p>
+          </div>
+          <div class="box-team-name">
+            <p class="team-name">Test</p>
+          </div>
+        </article>
+        <ul class="points-on-top">
+          <li onclick="top-1">1</li>
+          <li onclick="top-2">2</li>
+          <li onclick="top-3">3</li>
+        </ul>
+      </section>
+      <footer>
+        <button class="reset" onclick="reset-points">Reset</button>
+      </footer>
+    </main>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
