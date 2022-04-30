@@ -16,7 +16,7 @@ body{
     white-space: nowrap;
 }
 
-.points{
+.points-home, .points-away{
     color: #FDF860;
     font-size: 150px;
     text-align: center;
@@ -58,6 +58,7 @@ ul{
 .box-team-name{
     text-align: center;
     margin-top: -25px;
+    text-transform: uppercase;
 }
 
 .team-name{
