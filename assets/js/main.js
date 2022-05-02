@@ -95,3 +95,48 @@ function resetPoints(){
     countHome.innerHTML = '0' + 0;
     countAway.innerHTML = '0' + 0;
 }
+
+// BONUS
+
+// Hier wird das Modal aufgerufen und geschlossen.
+
+let modal = document.getElementById("myModal");
+let btn = document.getElementById("rename");
+let span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  } 
+
+// Hier versuche ich den Text in das HTML zu überführen.
+
+/* Hier lasse ich JS über die Deklaration nameHome die Klasse .team-name im html-Dokument identifizieren */
+
+let nameHome = document.querySelector('.team-name-home')
+let nameAway = document.querySelector('.team-name-away')
+
+/* Hier lasse ich JS den Inhalt (.textContent) des gefundenen html-Teils in der Konsole ausgeben, um zu prüfen, ob es funktioniert */
+
+console.log(nameHome.textContent);
+console.log(nameAway.textContent);
+
+/* Hier führe ich die function aus, wenn auf den Button saveteamnames geklickt wird. */
+
+function saveteamnames(){
+    let renameHome = document.getElementById('change-home-team-name').value;
+    let renameAway = document.getElementById('change-away-team-name').value;
+    console.log(renameHome);
+    console.log(renameAway);
+    nameHome.innerHTML = renameHome;
+    nameAway.innerHTML = renameAway;
+}
