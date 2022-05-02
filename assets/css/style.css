@@ -60,7 +60,7 @@ div{
     text-transform: uppercase;
 }
 
-.team-name{
+.team-name-home, .team-name-away{
     position: relative;
     display: inline-block;
     padding-left: 10px;

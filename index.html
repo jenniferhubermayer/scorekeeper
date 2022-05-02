@@ -16,7 +16,7 @@
               <p class="points-home"></p>
             </div>
             <div class="box-team-name">
-              <p class="team-name">Home</p>
+              <p class="team-name-home">Home1</p>
             </div>
           </div>
           <ul class="points-on-top">
@@ -31,7 +31,7 @@
               <p class="points-away"></p>
             </div>
             <div class="box-team-name">
-              <p class="team-name">Away</p>
+              <p class="team-name-away">Away</p>
             </div>
           </div>
           <ul class="points-on-top">
@@ -50,9 +50,11 @@
             <p>max. 10 characters</p>
             <input
               id="change-home-team-name"
+              name="HomeName"
               type="text"
-              value="Home"
+              value=""
               maxlength="10"
+              placeholder="Type Name"
             />
           </div>
           <div id="away-rename">
@@ -61,11 +63,12 @@
             <input
               id="change-away-team-name"
               type="text"
-              value="Away"
+              value=""
               maxlength="10"
+              placeholder="Type Name"
             />
           </div>
-          <button>Commit</button>
+          <button onclick="saveteamnames()">Save & Close</button>
         </article>
       </section>
       <!-- BONUS MODAL Ende -->

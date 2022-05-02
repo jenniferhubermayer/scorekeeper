@@ -120,18 +120,32 @@ window.onclick = function(event) {
 
 // Hier versuche ich den Text in das HTML zu überführen.
 
-let nameHome ='HansPeter'
+/* Hier lasse ich JS über die Deklaration nameHome die Klasse .team-name im html-Dokument identifizieren */
 
-let renameHome = document.getElementById('change-home-team-name');
+let nameHome = document.querySelector('.team-name-home')
+// let nameAway = document.querySelector('.team-name-away')
 
-console.log(nameHome);
+/* Hier lasse ich JS den Inhalt (.textContent) des gefundenen html-Teils in der Konsole ausgeben, um zu prüfen, ob es funktioniert */
 
-nameHome.innerHTML = nameHome
+console.log(nameHome.textContent);
+// console.log(nameAway.textContent);
 
-function renameTeams(){
-    nameHome = nameHome;
-    console.log('Hier ist der Name aus der Box' + nameHome);
-    renameHome.innerHTML = nameHome;
+/* Hier  */
+
+// nameHome = document.getElementById('team-name-home')
+
+/* Hier lasse ich JS einen Textbaustein in die Deklaration nameHome ausgeben. Die Deklaration greift auf .team-name im html zu */
+
+function saveteamnames(){
+
 }
 
-renameTeams();
+let renameHome = document.getElementById('change-home-team-name').value
+
+// let renameAway = document.getElementById('change-away-team-name').value
+
+console.log(renameHome);
+// console.log(renameAway);
+
+nameHome.innerHTML = renameHome;
+// nameAway.innerHTML = renameAway;
