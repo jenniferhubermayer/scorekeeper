@@ -100,9 +100,9 @@ function resetPoints(){
 
 // Hier wird das Modal aufgerufen und geschlossen.
 
-var modal = document.getElementById("myModal");
-var btn = document.getElementById("rename");
-var span = document.getElementsByClassName("close")[0];
+let modal = document.getElementById("myModal");
+let btn = document.getElementById("rename");
+let span = document.getElementsByClassName("close")[0];
 
 btn.onclick = function() {
     modal.style.display = "block";
@@ -123,29 +123,20 @@ window.onclick = function(event) {
 /* Hier lasse ich JS über die Deklaration nameHome die Klasse .team-name im html-Dokument identifizieren */
 
 let nameHome = document.querySelector('.team-name-home')
-// let nameAway = document.querySelector('.team-name-away')
+let nameAway = document.querySelector('.team-name-away')
 
 /* Hier lasse ich JS den Inhalt (.textContent) des gefundenen html-Teils in der Konsole ausgeben, um zu prüfen, ob es funktioniert */
 
 console.log(nameHome.textContent);
-// console.log(nameAway.textContent);
+console.log(nameAway.textContent);
 
-/* Hier  */
-
-// nameHome = document.getElementById('team-name-home')
-
-/* Hier lasse ich JS einen Textbaustein in die Deklaration nameHome ausgeben. Die Deklaration greift auf .team-name im html zu */
+/* Hier führe ich die function aus, wenn auf den Button saveteamnames geklickt wird. */
 
 function saveteamnames(){
-
+    let renameHome = document.getElementById('change-home-team-name').value;
+    let renameAway = document.getElementById('change-away-team-name').value;
+    console.log(renameHome);
+    console.log(renameAway);
+    nameHome.innerHTML = renameHome;
+    nameAway.innerHTML = renameAway;
 }
-
-let renameHome = document.getElementById('change-home-team-name').value
-
-// let renameAway = document.getElementById('change-away-team-name').value
-
-console.log(renameHome);
-// console.log(renameAway);
-
-nameHome.innerHTML = renameHome;
-// nameAway.innerHTML = renameAway;
